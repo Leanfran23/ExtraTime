@@ -1,0 +1,166 @@
+*{
+    background-color: #1d1d1d;
+    font-family: 
+                        'Morganite';
+                        /* 'Hero'; */
+                        /* '9bar' */
+                        /* 'theobald'; */
+}
+
+#logo{
+    width: 200px;
+    height: 250px;
+    margin-bottom: -15%;
+}
+
+#gif{
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    margin-left: 350px;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+
+.portada{
+    height: 650px;
+}
+
+#primera-plana{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+#menu{
+    text-align: right;
+    margin-right: 45px;
+}
+
+#menu ul li{
+    display: inline-block;
+    
+}
+#menu ul li a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    padding: 60px 10px;
+    display: block;
+    /* para que el hover no sobrepase la linea de la caja */
+
+}
+
+#menu ul li a:hover{
+    background-color: #f90404b1;
+    transform: skew(-30deg, 0deg);
+    /* transform: rotate(20deg); */
+    /* transform: scaleY(2); */
+
+}
+
+h2{
+    font-size: 100px;
+    color: white;
+    font-family: 'Hero';
+    
+}
+
+h3{
+    font-size: 20px;
+    color: rgb(240, 13, 13);
+    font-family: 'Helvetica Neue';
+    margin-top: -80px;
+}
+
+h4{
+    padding: 15px;
+  margin-right: 100px;
+    font-size: 50px;
+    text-align: right;
+    color: white;
+    font-family: '9bar';
+    border-radius: 0px 20px 20px 0px;
+    background-color: rgb(124, 6, 6);
+}
+
+.contenedor1{
+    width: 59%;
+    margin:1% 1%;
+    float: left;;
+}
+
+.contenedor2{
+    width: 35%;
+    float: right;
+    background-color: red;
+    border-radius: 30px;
+  
+}
+
+.torneo{
+    width: 100%;
+    /* float: left; */
+}
+
+.torneo img{
+    width: 100%;
+}
+
+
+.goles{
+    width: 80%;
+    /* float: right; */
+
+    background-color: red;
+}
+
+.goles img{
+    width: 90%;
+    height: 900px;
+}
+
+#champ{
+    font-size: 158px;
+    color: rgb(239, 226, 40);
+    font-family: '9bar';
+    margin-bottom: 0px;
+}
+
+.publicidad{
+    margin-top: 50px;
+}
+
+
+#campeones{
+    font-size: 30px;
+    color: rgba(173, 165, 55, 0.917);
+    font-family: 'Helvetica';
+    position: absolute;
+    margin-top: 0px;
+    margin-bottom: -0px;
+}
+
+.dorado{
+    background-color: red;
+    /* background-image: linear-gradient(180deg, #ffff7c 0, #ffff6f 12.5%, #fff565 25%, #ffda5c 37.5%, #f2bd53 50%, #dda14c 62.5%, #c98a46 75%, #b77642 87.5%, #a8663f 100%); */
+}
+iframe{
+    width: 430px;
+    height: 255px;
+    margin-left: 10%;
+}
+
+/* .dorado img{
+  width: 20px;
+  height: 20px;
+} */
