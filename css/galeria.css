@@ -1,0 +1,132 @@
+*{
+    background-color: #1d1d1d;
+    font-family: 'Morganite';
+ 
+}
+#logo{
+    width: 200px;
+    height: 250px;
+    margin-bottom: -15%;
+    border-radius: 50%;
+    border-color: gray;
+}
+
+#menus{
+    text-align: right;
+    margin-right: 45px;
+}
+
+#menus ul li{
+    display: inline-block;
+    
+}
+
+#menus ul li a{
+    text-decoration: none;
+    font-size: 50px;
+    color: white;
+    padding: 60px 10px;
+    display: block;
+    /* para que el hover no sobrepase la linea de la caja */
+}
+
+#menus ul li a:hover{
+    background-color: #f90404b1; 
+    transform: skew(-30deg, 0deg); 
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+
+}
+
+.container img{
+    max-width: 300px;
+    max-height: 300px;
+    padding: 2px;
+    border-radius: 15px;
+    background-color: red;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+h1{
+    color: white;
+    font-size: 150px;
+    margin-bottom: 50px;
+    max-width: 70%;
+    background-color: yellow;
+}
+.header{
+    display: flex;
+}
+.footer{
+    display: flex;
+    background-color: #E3001B;
+    height: 19em;
+    padding: 40px;
+    margin-top: 80px;
+}
+
+.contactar{
+    font-size: 60px;
+    color: white;
+    width: 250px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: rgb(12, 12, 12);
+}
+
+.columna1{
+    width: 20%;
+    background: none;
+}
+
+h5{
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    background: none;
+
+}
+.nosotros{
+    font-size: 20px;
+    color: white;
+    font-family: 'Helvetica Neue';
+    background: none;
+}
+.columna2{
+    margin: 0px 30px 30px 30px;
+    width: 50%;
+    background: none;
+}
+.columna2 > p{
+    text-align: center;
+}
+
+.columna3{
+    width: 20%;
+    background: none;
+    
+}
+.columna3 > *{
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+.redes{
+    background: none;
+    /* float: right; */
+}
+.registrar{
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #1d1d1d00;
+    margin-bottom: 5%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+

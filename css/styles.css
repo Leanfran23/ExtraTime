@@ -1,10 +1,6 @@
 *{
     background-color: #1d1d1d;
-    font-family: 
-                        'Morganite';
-                        /* 'Hero'; */
-                        /* '9bar' */
-                        /* 'theobald'; */
+    font-family: 'Morganite';
 }
 
 #logo{
@@ -20,6 +16,7 @@
     margin-left: 350px;
     margin-top: -20px;
     border-radius: 10px;
+    transform: skew(-30deg, 0deg); 
 }
 
 
@@ -35,98 +32,97 @@
 .container{
     width: 100%;
     height: 100%;
+    text-align: 500px;
+}
+.portada p{
+    font-size: 18rem;
+    color: aliceblue;
+    text-align: center;
+    transform: translate(-30%, -200%);
+    background-color: rgba(255, 0, 0, 0);
 }
 
 
-
-
-
-#menu{
+#menus{
     text-align: right;
     margin-right: 45px;
 }
 
-#menu ul li{
+#menus ul li{
     display: inline-block;
     
 }
-#menu ul li a{
+
+#menus ul li a{
     text-decoration: none;
     font-size: 50px;
     color: white;
     padding: 60px 10px;
     display: block;
     /* para que el hover no sobrepase la linea de la caja */
-
 }
 
-#menu ul li a:hover{
-    background-color: #f90404b1;
+#menus ul li a:hover{
+    background-color: #E3001B;
     transform: skew(-30deg, 0deg);
-    /* transform: rotate(20deg); */
-    /* transform: scaleY(2); */
-
 }
 
 h2{
     font-size: 100px;
     color: white;
     font-family: 'Hero';
-    
 }
 
 h3{
     font-size: 20px;
-    color: rgb(240, 13, 13);
+    color: #E3001B;
     font-family: 'Helvetica Neue';
     margin-top: -80px;
 }
 
 h4{
-    padding: 15px;
-  margin-right: 100px;
     font-size: 50px;
-    text-align: right;
-    color: white;
-    font-family: '9bar';
-    border-radius: 0px 20px 20px 0px;
-    background-color: rgb(124, 6, 6);
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #1d1d1d00;
+    margin-bottom: 5%;
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 .contenedor1{
     width: 59%;
     margin:1% 1%;
-    float: left;;
+    float: left;
 }
 
 .contenedor2{
     width: 35%;
     float: right;
-    background-color: red;
-    border-radius: 30px;
+    margin-top: 90px;
+    background-color: #E3001B;
+    border-radius: 40px;
+    /* max-height: auto; */
+    overflow: hidden;
+    height: 2000px;
   
 }
 
-.torneo{
-    width: 100%;
-    /* float: left; */
-}
 
-.torneo img{
+
+.alquiler img{
     width: 100%;
 }
 
-
-.goles{
-    width: 80%;
-    /* float: right; */
-
-    background-color: red;
+.publicidad img{
+    width: 100%;
+}
+.registro img{
+    width: 100%;
 }
 
-.goles img{
-    width: 90%;
-    height: 900px;
+.news{
+    width: 100%;
+    background-color: #E3001B;
 }
 
 #champ{
@@ -134,33 +130,135 @@ h4{
     color: rgb(239, 226, 40);
     font-family: '9bar';
     margin-bottom: 0px;
+    background-color: rgb(140, 140, 44);
+    border-radius: 50px 50px 0px 0px;
 }
 
 .publicidad{
     margin-top: 50px;
 }
 
-
-#campeones{
-    font-size: 30px;
-    color: rgba(173, 165, 55, 0.917);
-    font-family: 'Helvetica';
-    position: absolute;
-    margin-top: 0px;
-    margin-bottom: -0px;
+.publicidad img{
+    width: 80%;
+    margin-left: 70px;
 }
 
-.dorado{
-    background-color: red;
-    /* background-image: linear-gradient(180deg, #ffff7c 0, #ffff6f 12.5%, #fff565 25%, #ffda5c 37.5%, #f2bd53 50%, #dda14c 62.5%, #c98a46 75%, #b77642 87.5%, #a8663f 100%); */
-}
+
+
+
 iframe{
     width: 430px;
     height: 255px;
     margin-left: 10%;
 }
 
-/* .dorado img{
-  width: 20px;
-  height: 20px;
-} */
+
+
+.publicidad2 {
+    display: block;
+    float: right;
+    margin-top: 500px;
+    width: 400px;
+    height: 800px;
+}
+
+#publi{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mvp{
+    width: 400px;
+    margin-left: 30px;
+    height: 630px;
+    width: 100%;
+    background-color:#E3001B;
+
+}
+#img-mvp{
+    width: 80%;
+    height: 85%;
+    margin-left: 25px;
+}
+
+.campeones{
+    display: flex;
+    width: 100%;
+    align-items: bottom;
+}
+.champion{
+    background-color: rgb(140, 140, 44);
+/* border-radius: 50px 50px 0px 0px; */
+    width: 70%;
+    border: white;
+}
+
+#publi2{
+  
+    width: 20%;
+  
+   margin-left: 125px;
+}
+
+iframe{
+    border-radius: 20px;
+}
+.footer{
+    display: flex;
+    background-color: #E3001B;
+    height: 19em;
+    padding: 40px;
+
+}
+
+.contactar{
+    font-size: 60px;
+    color: white;
+    width: 250px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: rgb(12, 12, 12);
+}
+
+.columna1{
+    width: 20%;
+    background: none;
+}
+
+h5{
+    font-size: 30px;
+    font-family: 'Fjalla One', sans-serif;
+    background: none;
+
+}
+.nosotros{
+    font-size: 20px;
+    color: white;
+    font-family: 'Helvetica Neue';
+    background: none;
+}
+.columna2{
+    margin: 0px 30px 30px 30px;
+    width: 50%;
+    background: none;
+}
+.columna2 > p{
+    text-align: center;
+}
+
+.columna3{
+    width: 20%;
+    background: none;
+    
+}
+.columna3 > *{
+    width: 60px;
+    height: 60px;
+    float: right;
+}
+.redes{
+    background: none;
+    /* float: right; */
+}
+
