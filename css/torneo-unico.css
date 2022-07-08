@@ -69,6 +69,7 @@ table th {
     height: 70px;
     border-radius: 25px;
     background-color: rgb(12, 12, 12);
+    margin-left: 250px;
 }
 
 .columna1{
@@ -109,7 +110,6 @@ h5{
 }
 .redes{
     background: none;
-    /* float: right; */
 }
 
 .registrar{
@@ -119,4 +119,8 @@ h5{
     margin-bottom: 5%;
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+a{
+    text-decoration: none;
 }
