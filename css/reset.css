@@ -43,6 +43,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 /* Evitamos problemas con las imagenes */

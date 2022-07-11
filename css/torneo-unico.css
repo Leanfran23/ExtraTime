@@ -1,126 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Mohave:wght@300&display=swap');
 *{
+    margin: 0%;
+    padding: 0%;
     background-color: #1d1d1d;
-    font-family: 'Helvetica Neue';
-                       
+    font-family: 'Mohave', sans-serif;
+}
+.main{
+    margin-bottom: 2em;
 }
 
+    /* Inicio elementos del header */
 
-#logo{
-    width: 200px;
-    height: 250px;
-    margin-bottom: -15%;
-    border-radius: 50%;
-}
-
-
-#menus{
-    text-align: right;
-    margin-right: 45px;
-}
-
-#menus ul li{
-    display: inline-block;
+    .header{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 17em;
+        height: 17em;
+    }
+    .header__logo{
+        width: 17em;
+        height: 17em;
+        padding: 1em;
+    }
+    .header__up--center{
+        width: 20em;
+        height: 12em;
+        transform: skew(-30deg, 0deg); 
+    }
+    .menu{
+        position: relative;
+        width: 39em;
+        height: 4em;
+    }
+    .menu__li{
+        display: inline;
+    }
+    .menu__a{
+        font-size: 1.5em;
+        color: white;
+        display: inline-block;
+        height: 100px;
+        padding: 0.3em;
+        transition: 0.5s ease-out;
+        padding-top: 1em;
+    }
     
-}
-
-#menus ul li a{
-    text-decoration: none;
-    font-size: 50px;
-    color: white;
-    padding: 60px 10px;
-    display: block;
-    font-family: 'Morganite';
-
-    /* para que el hover no sobrepase la linea de la caja */
-}
-
-#menus ul li a:hover{
-    background-color: #f90404b1; 
-    transform: skew(-30deg, 0deg); 
-}
-table{
+    /* efecto del menu */
+    .menu__a:hover{
+        background-color: #f10f2ae6;
+        transform: skew(-30deg, 0deg);
+        transition: 0.5s ease-out;
+        margin-right: 1em;
+        font-size: 2.3em;
+    }
+        /* Fin elementos del header */
+.table{
     margin-left: 25em;
     text-align: center;
 }
 
-table td {
+.table__td {
     color: rgb(255, 255, 255);
     background-color: gray;
   }
-table th {
+.table__th {
     width: 150px;
     color: rgb(0, 0, 0);
     background-color: rgb(219, 229, 72);
 }
 
-.footer{
-    display: flex;
-    background-color: #E3001B;
-    height: 19em;
-    padding: 40px;
-    margin-top: 80px;
-}
-
-.contactar{
-    font-size: 60px;
-    font-family: 'Morganite';
-    color: white;
-    width: 250px;
-    height: 70px;
-    border-radius: 25px;
-    background-color: rgb(12, 12, 12);
-    margin-left: 250px;
-}
-
-.columna1{
-    width: 20%;
-    background: none;
-}
-
-h5{
-    font-size: 30px;
-    font-family: 'Fjalla One', sans-serif;
-    background: none;
-
-}
-.nosotros{
-    font-size: 20px;
-    color: white;
-    font-family: 'Helvetica Neue';
-    background: none;
-}
-.columna2{
-    margin: 0px 30px 30px 30px;
-    width: 50%;
-    background: none;
-}
-.columna2 > p{
-    text-align: center;
-}
-
-.columna3{
-    width: 20%;
-    background: none;
+    /* Inicio de elementos del footer */
+    .footer{
+        width: 100%;
+        grid-column: x0 / x2;
+        display: flex;
+        justify-content: space-between;
+        background-color: #E3001B;
+        padding: 30px;
+        height: 25em;
+        margin-right: 0%;
+        width: 169vh;
+    }
+    .footer__columna1{
+        width: 30%;
+        background: none;
+    }
+    .footer__h3{
+        font-size: 3em;
+        background: none;
+        color: black;
+    }
     
-}
-.columna3 > *{
-    width: 60px;
-    height: 60px;
-    float: right;
-}
-.redes{
-    background: none;
-}
-
-.registrar{
-    font-size: 50px;
-    font-family: 'Fjalla One', sans-serif;
-    background-color: #1d1d1d00;
-    margin-bottom: 5%;
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-a{
-    text-decoration: none;
-}
+    .footer__columna3{
+        width: 20%;
+        background: none;
+    }
+    
+    .footer__columna2{
+        background: none;
+    }
+    .footer__a{
+        margin:25%;
+        padding-top: 6%;
+        font-size: 2em;
+        color: white;
+        width: 9em;
+        height: 3em;
+        text-align: center;
+    }
+    .footer__contactar{
+        border-radius:25px;
+    }
+    .footer__p{
+        font-family: 'Mohave', sans-serif;
+        font-size: 1.5em;
+        color: white;
+        background: none;
+        margin-top: 15%;
+    }
+    .footer__columna3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__redes{
+        background: none;
+        width: 5em;
+    }
+    .footer__up{
+        background-color: none;
+        background: none;
+        width: 7em;
+        margin-left: 35%;
+    }
+    .footer__a2{
+        background: none;
+    }
+           /* Fin de elementos del footer */

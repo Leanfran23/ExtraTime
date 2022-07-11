@@ -5,41 +5,60 @@
     background-color: #1d1d1d;
     font-family: 'Mohave', sans-serif;
 }
-
+main{
+    margin-bottom: 2em;
+}
     /* Inicio elementos del header */
-header{
-    display: flex;
-    justify-content: space-between;    /*cada parte de la caja van a las puntas y la del medio centrada*/
-    align-items:flex-end;
-}
-#logo{
-    width: 15em;
-    height: 17em;
-}
-.menu{
-    position: relative;
-    width: 39em;
-    height: 4em;
-}
 
-.menu ul li{
-    display: inline;
-}
-.menu ul li a{
-    text-decoration: none;
-    font-size: 2em;
-    color: white;
-    display: inline-block;     /* para que el hover no sobrepase la linea de la caja */
-}
-/* efecto del menu */
-.menu ul li a:hover{
-    background-color: #E3001B;
-    transform: skew(-30deg, 0deg);
-}
+    .header{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .logo{
+        width: 17em;
+        height: 17em;
+    }
+    .header__logo{
+        width: 17em;
+        height: 17em;
+        padding: 1em;
+    }
+    .header__up--center{
+        width: 20em;
+        height: 12em;
+        transform: skew(-30deg, 0deg); 
+    }
+    .menu{
+        position: relative;
+        width: 39em;
+        height: 4em;
+    }
+    .menu__li{
+        display: inline;
+    }
+    .menu__a{
+        font-size: 1.5em;
+        color: white;
+        display: inline-block;
+        height: 100px;
+        padding: 0.3em;
+        transition: 0.5s ease-out;
+        padding-top: 1em;
+    }
+    
+    /* efecto del menu */
+    .menu__a:hover{
+        background-color: #f10f2ae6;
+        transform: skew(-30deg, 0deg);
+        transition: 0.5s ease-out;
+        margin-right: 1em;
+        font-size: 2.3em;
+    }
+        /* Fin elementos del header */
 
 
-
-
+/* Inicio del body */
 .grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -47,102 +66,114 @@ header{
     gap:1.5rem;
     row-gap: 2rem;
     border-radius: 50%;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 12em;
+    margin-right: 12em;
 }
 
-.grid div{
+.grid__div{
     background-color: rgb(111, 111, 135);
     border-radius: 30px;
+    overflow: hidden;
 }
 
-button{
+.grid__button{
     cursor:pointer;
-    font-size: 100px;
-    background-color: rgb(49, 240, 6);
-    width: 210px;
-    border-radius: 30px 30px 30px 30px;
-    margin: 10px;
+    font-size: 3em;
+    width: 4em;
+    border-radius: 20px;
+    margin: .5em;
 }
-
-
-.img-torneo{
+.grid__a{
+    background: #05f639;
+}
+.grid__img{
     width: 100%;
-    max-height: 300px;
-    max-height:150px;
+    max-height: 9em;
     border-radius: 30px 30px 0px 0px;
 }
-p{
-    font-size: 40px;
+.grid__h2{
+    font-size: 1em;
     background-color: rgba(78, 29, 29, 0);
-    margin-left: 0px;
+    margin-left: 5em;
 }
-
-.grid p{
-    font-size: 20px;
+.grid__p{
     font-family: 'Quicksand', sans-serif;
-    margin-left: 15%;
 }
 
-i{
-    background-color: rgba(255, 0, 0, 0);
-    margin-right: 10px;
+.grid__i{
+    background:none;
+    margin-left: 4em;
 }
-
-.ver{
+.grid__button{
     text-decoration: none;
     background-color: #1d1d1d00;
     color: black;
 }
 
- /*Inicio Footer*/
- .footer{
-    display: flex;
-    background-color: #E3001B;
-    padding: 30px;
-    margin-top: 3em;
-    height: 25em;
-}
-.columna1{
-    width: 30%;
-    background: none;
-}
-.columna2{
-    background: none;
-}
-.columna3 > *{
-    width: 4em;
-    height: 4em;
-    float: right;
-}
-.h3{
-    font-size: 3em;
-    background: none;
-    color: black!important;
-}
-.nosotros{
-    font-family: 'Mohave', sans-serif;
-    font-size: 1.5em;
-    color: white;
-    background: none;
-    margin-top: 15%;
-}
-.contactar{
-    margin:25%;
-    padding-top: 6%;
-    text-decoration: none;
-    font-size: 2em;
-    color: white;
-    width: 9em;
-    height: 3em;
-    border-radius: 25px;
-    text-align: center;
-}
-.columna3{
-    width: 20%;
-    background: none;
-}
-.redes{
-    background: none;
-}
-  /* Fin Footer */
+    /* Inicio de elementos del footer */
+    .footer{
+        width: 100%;
+        grid-column: x0 / x2;
+        display: flex;
+        justify-content: space-between;
+        background-color: #E3001B;
+        padding: 30px;
+        height: 25em;
+        margin-right: 0%;
+        width: 169vh;
+    }
+    .footer__columna1{
+        width: 30%;
+        background: none;
+    }
+    .footer__h3{
+        font-size: 3em;
+        background: none;
+        color: black;
+    }
+    
+    .footer__columna3{
+        width: 20%;
+        background: none;
+    }
+    
+    .footer__columna2{
+        background: none;
+    }
+    .footer__a{
+        margin:25%;
+        padding-top: 6%;
+        font-size: 2em;
+        color: white;
+        width: 9em;
+        height: 3em;
+        text-align: center;
+    }
+    .footer__contactar{
+        border-radius:25px;
+    }
+    .footer__p{
+        font-family: 'Mohave', sans-serif;
+        font-size: 1.5em;
+        color: white;
+        background: none;
+        margin-top: 15%;
+    }
+    .footer__columna3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__redes{
+        background: none;
+        width: 5em;
+    }
+    .footer__up{
+        background-color: none;
+        background: none;
+        width: 7em;
+        margin-left: 35%;
+    }
+    .footer__a2{
+        background: none;
+    }
+           /* Fin de elementos del footer */
