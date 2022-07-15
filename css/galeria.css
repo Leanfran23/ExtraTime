@@ -58,7 +58,7 @@
         /* Fin elementos del header */
 
 
-    /* Inicio del body */
+    /* Inicio del main */
 .container__galeria{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -74,7 +74,7 @@
     object-fit: cover;
     aspect-ratio: 4/3;
 }
- /* Fin del body */
+ /* Fin del main*/
 
     /* Inicio de elementos del footer */
     .footer{
