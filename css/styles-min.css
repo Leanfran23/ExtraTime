@@ -24,6 +24,7 @@
 .header__up--center{
     width: 20em;
     height: 12em;
+    -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg); 
 }
 .menu{
@@ -47,6 +48,7 @@
 /* efecto del menu */
 .menu__a:hover{
     background-color: #DA1212;
+    -webkit-transform: skew(-30deg, 0deg);
     transform: skew(-30deg, 0deg);
     transition: 0.5s ease-out;
     margin-right: 1em;

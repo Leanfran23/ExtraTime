@@ -5,7 +5,7 @@
     background-color: #1d1d1d;
     font-family: 'Mohave', sans-serif;
 }
-main{
+.main{
     margin-bottom: 2em;
 }
     /* Inicio elementos del header */
@@ -85,6 +85,7 @@ main{
 }
 .grid__a{
     background: #05f639;
+    border-radius: 25px
 }
 .grid__img{
     width: 100%;
@@ -177,3 +178,6 @@ main{
         background: none;
     }
            /* Fin de elementos del footer */
+
+
+           
