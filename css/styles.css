@@ -258,3 +258,59 @@
     background: none;
 }
        /* Fin de elementos del footer */
+
+
+       .main__torneo{
+            margin-bottom: 2em;
+       }
+       .grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap:1.5rem;
+        row-gap: 2rem;
+        border-radius: 50%;
+        margin-left: 12em;
+        margin-right: 12em;
+    }
+    
+    .grid__div{
+        background-color: rgb(111, 111, 135);
+        border-radius: 30px;
+        overflow: hidden;
+    }
+    
+    .grid__button{
+        cursor:pointer;
+        font-size: 3em;
+        width: 4em;
+        border-radius: 20px;
+        margin: .5em;
+    }
+    .grid__a{
+        background: #05f639;
+        border-radius: 25px
+    }
+    .grid__img{
+        width: 100%;
+        max-height: 9em;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .grid__h2{
+        font-size: 1em;
+        background-color: rgba(78, 29, 29, 0);
+        margin-left: 5em;
+    }
+    .grid__p{
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    .grid__i{
+        background:none;
+        margin-left: 4em;
+    }
+    .grid__button{
+        text-decoration: none;
+        background-color: #1d1d1d00;
+        color: black;
+    }
