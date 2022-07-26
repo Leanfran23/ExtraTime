@@ -2,7 +2,7 @@
 *{
     margin: 0%;
     padding: 0%;
-    background-color: #1d1d1d;
+    background-color: black;
     // font-family: 'Anek Latin', sans-serif;  //para el container 2 
     font-family: 'League Gothic', sans-serif;
     // font-family: 'Oswald', sans-serif;
@@ -16,6 +16,11 @@
 
 body {
     width: 98.9vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header'
+                         'main'
+                         'footer';
   }
 
 .aside {
@@ -41,7 +46,6 @@ body {
     margin:2%;
     flex-direction: column;
     margin-top: 7em;
-    // padding: 0%;
     row-gap: 5em;
 
     &__container {
@@ -49,7 +53,6 @@ body {
         flex-direction: column;
         width: 100%;
         height: 50em;
-        // row-gap: 2em;
     }
     &__h2 {
         width: 100%;
@@ -65,19 +68,17 @@ body {
     &__p {
         width: 100%;
         font-size: 2em;
-        color: #E3001B;
-        // font-family: 'Montserrat Alternates', sans-serif;
+        // background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
+        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         margin: 1.5em;
         font-family: 'Red Hat Text', sans-serif;
-        // background-color: rgba(240, 255, 255, 0);
         margin-left: 0%;
-        line-height: 1.2;
+        line-height: 1.2;border-radius: 10px;
     }
 }
 .container2 {
     width: 100%;
     float: right;  
-    background-color: #DA1212;
     border-radius: 40px;
     overflow: hidden;
     display: flex;
@@ -86,12 +87,13 @@ body {
     padding-top: 4em;
     &__div {
         width: 90%;
-        background-color: #E3001B;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         margin: 0 auto;
         height: 17em;
+        border-radius: 40px;
     }
     &__h3 {
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight:bold;
         background: none;
         margin-top: 15%;
@@ -138,10 +140,11 @@ body {
 .container {
     &__mvp {
         width: 90%;
-        background-color: #DA1212;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         margin-top: 9em;
         margin: 0 auto;
         height: 50em;
+        border-radius: 40px;
     }
     // INICIO PAGINA GALERIA
     &__galeria{
@@ -155,18 +158,18 @@ body {
         max-height: 300px;
         padding: 2px;
         border-radius: 15px;
-        background-color: red;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         object-fit: cover;
         aspect-ratio: 4/3;
     }
     // FIN PAGINA GALERIA
 }
 .footer {
-    width: 100vw;
-    grid-column: x0 / x2;
+    grid-area: 'footer';
+    width: 98.9vw;
     display: flex;
     justify-content:space-between; 
-    background-color: #DA1212;;
+    background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
     padding: 3em;
     margin-top: 2em;
     &__columna1 {
@@ -184,7 +187,6 @@ body {
     }
     &__contactar {
         border-radius:25px;
-        // margin-top:65%;
         width: 40%;
         margin: 0 auto;
         margin-top: 10%;
@@ -244,17 +246,15 @@ body {
 // TORNEOS 
 .grid{
     &__button{
-        // margin: 0 auto;
         cursor:pointer;
         font-size: 2em;
         width: 6em;
-        // border-radius: 1px;
         margin: 0 auto;
         text-decoration: none;
         color: black;
     }
     &__a{
-        background: #05f639;
+        background: #04C9B7;
         border-radius: 20px;
         margin-top: 2.3em;
     }
@@ -262,20 +262,6 @@ body {
         background-color: #1d1d1d00;
         margin: 1em;
     }
-    // &__img{
-    //     width: 100%;
-    //     max-height: 9em;
-    //     border-radius: 30px 30px 0px 0px;
-    // }
-   
-        // margin-top: -4em;
-    // &__p{
-    //     font-family: 'Quicksand', sans-serif;
-    // }
-    // &__i{
-    //     background:none;
-    //     margin-left: 4em;
-    // }
     &__li{
         background-color:rgba(0, 0, 255, 0);
         margin: 1em auto 0 3.5em;
@@ -285,40 +271,59 @@ body {
     }
 }
 .header {
+    grid-area: 'header';
+    width: 100%;
     display: flex;
     justify-content:space-between;   
     align-items: center;
     &__logo {
-        width: 17em;
-        height: 17em;
-        padding: 1em;
-    }
-    &__up--center {
-        width: 20em;
+        width: 30em;
         height: 12em;
-        transform: skew(-30deg, 0deg); 
+        padding: 1em;
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        width: 10em;
+        height: 10em;
+        margin-right: 0.5em;
+    }
+    &__name{
+        padding-top:.5em ;
+        font-size: 5em;
+        height: 1.3em;
+        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
     }
 }
 .main {
+    grid-area: 'main';
     display: grid;
     grid-template-columns: [x0] 55em [x1] 28em [x2];
     gap: 4em;
+    @media (max-width: 1800px){
+        grid-template-columns: [x0]40em[x1];
+        display: block;
+        .main{
+            &__container2{
+                width:40em;
+            }
+            &__container3{
+                width:40em;
+            }
+        }
+    }
     &__container2 {
         width: 100%;
         float: right;  
-        background-color: #DA1212;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         border-radius: 40px;
         overflow: hidden;
         display: flex;
         flex-direction: column;
         row-gap: 10em;
         padding-top: 4em;
-    }
-    &__portada {
-        width: 100%;
-        grid-column: x0 / x2;
-        overflow: hidden;
-        height: 50em;
     }
     //  PAGINA TORNEOS
     &__torneo{
@@ -337,24 +342,43 @@ body {
     }
 }
 }
-.menu {
+.portada {
+    width: 100%;
+    grid-column: x0 / x2;
+    overflow: hidden;
+    height: 50em;
     position: relative;
-    width: 39em;
-    height: 4em;
+    display: inline-block;
+    // text-align: right;
+    &__titulo{
+       font-size: 15em;
+        position: absolute;
+        top: 100px;
+        right: 100px;
+        color: yellow;
+    }
+    &__text{
+        font-size: 1em;
+         position: absolute;
+         top: 100px;
+        //  right: 100px;
+         color: rgb(255, 255, 255);
+     }
+}
+.menu {
     &__a {
-        font-size: 1.5em;
+        font-size: 2em;
         color: #EEEEEE;
         display: inline-block;
         height: 100px;
         padding: 0.3em;
-        transition: 0.5s ease-out;
-        padding-top: 1em;
+        transition: 0.9s ease-out;
+        padding-top: .7em;
         &:hover{
-            background-color: #DA1212;
-            transform: skew(-30deg, 0deg);
+            background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
             transition: 0.5s ease-out;
-            margin-right: 1em;
-            font-size: 2.3em;
+            font-size: 3em;
+            border-radius: 40px;
         }
     }
     &__li {
@@ -368,25 +392,26 @@ body {
         margin-bottom: -15%;
         text-align: center;
         font-size: 5em;
-        color:#f90404b1;
+        // background-color: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
+        // background-color: red;
     }
 
     &__wrapper{
         margin-top: 20em;
-        box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+        box-shadow: 0 0 20px 0 rgba(128, 24, 240, 0.591);
         margin: 4em;
     }
     &__wrapper > *{
         padding: 1em;
     }
     &__form{
-        background-color: #1d1d1d;
+        background-color: #000000;
         display: grid;
         grid-template-columns: 1fr, 1fr;
         grid-column: 1 / 3;
     }
     &__info{
-        background-color: black;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
     }
 }
 
@@ -399,15 +424,17 @@ body {
     &__input,
     &__textarea{
         background: none;
+        background-color: rgba(33, 33, 33, 0.623);
+        border-radius: 15px;
         width:100%;
         border: none;
         padding: .7em;
-        border-bottom: 1px solid #f90404b1;
+        background-color: none;
         color: white;
         outline: 0;
     }
     &__button{
-        background-color: #f90404b1;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         padding: 1em;
         text-transform: uppercase;
         border-radius: 10px;
@@ -416,7 +443,7 @@ body {
         font-size: 17px;
         &:hover,
         &:focus{
-            background-color: greenyellow;
+            background-image: linear-gradient(to right top, greenyellow, green);
             color: black;
             transition: background-color 1s ease-out;
             outline: 0;
@@ -475,6 +502,7 @@ body {
         width: 150px;
         color: rgb(0, 0, 0);
         background-color: rgb(219, 229, 72);
+        background-color: #0223fd;
     }
 }
 

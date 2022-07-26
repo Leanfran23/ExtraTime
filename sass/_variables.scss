@@ -1,4 +1,5 @@
 
-$colores:("principal": #1d1d1d, "secundario":#DA1212, "terciario": #fff, "cuarto":#cbef4b);
+$colores:("principal": linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd), "secundario": black, "terciario": #fbf9f6, "cuarto":#cbef4b);
 
-$fuentes:("titulo":Mohave, "texto":Alatsi);
+
+$fuentes:("titulo":'League Gothic', sans-serif, "texto":'Red Hat Text', sans-serif, "subtitulos":'Anek Latin', sans-serif);
