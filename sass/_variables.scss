@@ -3,3 +3,30 @@ $colores:("principal": linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, 
 
 
 $fuentes:("titulo":'League Gothic', sans-serif, "texto":'Red Hat Text', sans-serif, "subtitulos":'Anek Latin', sans-serif);
+
+
+/* Acá definimos las Custom properties */
+:root{
+    --negro         : #393939;
+    --blanco        : #ececec;
+    --sombra-ppal   : #c9c9c9;
+    --sombra-sec    : #ffffff;
+    --borde-negro   : #00000050;
+
+    --marcado       : rgb(127, 195, 255);
+
+    /* Tipografía */
+    --tipo-principal  : Helvetica, Arial, sans-serif;
+}
+    
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+    :root{
+        --negro         : #ececec;
+        --blanco        : #303030;
+        --sombra-ppal   : #242424;
+        --sombra-sec    : #3c3c3c;
+
+        --borde-negro   : #FFFFFF50;
+    }
+}

@@ -1,0 +1,35 @@
+@mixin grid( $columnas ,$medidaC, $row: auto, $medidaR: 1fr, $espacio : 0){
+	display                 : grid;
+	grid-template-columns   : repeat( $columnas , $medidaC );
+	grid-template-rows      : repeat( $row , $medidaR );
+	gap                     : $espacio;
+	@content;
+}
+
+@mixin mobile(){
+	@media screen and (max-width: 480px){
+		*{
+			font-size:1em;
+			// background-color: white;
+		}
+		@content;
+	}
+}
+
+@mixin tablet(){
+	@media screen and (max-width: 760px){
+		@content;
+	}
+}
+
+@mixin notebook(){
+	@media screen and (max-width: 760px){
+		@content;
+	}
+}
+
+@mixin desktop(){
+	@media screen and (max-width: 760px){
+		@content;
+	}
+}

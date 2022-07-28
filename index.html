@@ -6,18 +6,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ExtraTime</title>
 	<link href="images/logo.png" rel="icon">
-	<link href="css/styles.css" rel="stylesheet">
-		<!-- FONT AWESOME -->
+	
+		<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+		<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+	<!-- FONT AWESOME -->
 	<script src="https://kit.fontawesome.com/5ef3f87c6b.js" crossorigin="anonymous"></script>
 		<!-- RESET CSS -->
-	<link href="css/reset.css" rel="stylesheet">  
+	<link href="css/reset.css" rel="stylesheet"> 
+	<link href="css/styles.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 	<header class="header">
 		<!-- Logo de la pagina -->
 		<div class="header__logo" id="up">
 			<a class="header__img" title="index" href="index.html"><img src="images/logo.png" alt="logo"/></a>
-			<h2 class="header__name">TiempoExtra</h2>
+			<h2 class="header__name2">TiempoExtra</h2>
 		</div>
 			<nav class="menu">
 				<ul class="menu__ul" data-animation="bonus">
@@ -30,83 +36,105 @@
 			</nav>
 	</header>
 
-<main class="body__main main">
-	<div class="main__portada portada">
-			<img class="portada__img" src="images/LEbirdd.jpg" alt="lebird papu">
-			<h2 class="portada__titulo">LeBird</h2>
-			<p class="portada__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat voluptatem asperiores facere perspiciatis est sunt architecto, quod, cum harum modi saepe perferendis quia dolorem nesciunt id delectus, sit facilis? Possimus.</p>
-	</div>
-	<!-- Contenedor principal (izquierda del main) -->
-	<div class="main__container1 container1">
-		<div class="container1__container">
-			<h2 class="container1__h2">Alquilá tu cancha</h2>
-			<p class="container1__p">Lorem ipsum dolor sit, amet conectetur adipisicing elit. Ratione voluptatibus placeat nobis saepe provident, ipsa hic reiciendis. Ullam, magni dolorem aliquid ducimus accusamus totam quidem dicta libero commodi facere porro?</p>
-			<img class="container1__img" src="images/gg.jpg" alt="img-alquilar">
-		</div>
-		<!-- publicidad -->
-		<aside class="container1__aside aside">
-			<img class="aside__img" src="images/publi234324.jpg.webp" alt="publicidad">
-		</aside>
+	<main class="body__main main">
+		<div class="main__carousel">
+			
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="images/balon.jpg" class="d-block w-100" alt="imagen 1">
+				  </div>
+				  <div class="carousel-item">
+					<img src="images/balon.jpg" class="d-block w-100" alt="imagen 2">
+				  </div>
+				  <div class="carousel-item">
+					<img src="images/balon.jpg" class="d-block w-100" alt="imagen 3">
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
 
-		<div class="container1__container">
-			<h2 class="container1__h2">Registra tu equipo</h2>
-			<p class="container1__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptatibus placeat nobis saepe provident, ipsa hic reiciendis. Ullam, magni dolorem aliquid ducimus accusamus totam quidem dicta libero commodi facere porro?</p>    
-			<img class="container1__img" src="images/torneo.jpg" alt="img-torneo">
 		</div>
-	</div>
-	<!-- Contenedor principal (derecha del main) -->
-	<div class="main__container2 container2">
-			<div class="container2__div">
 
-				<h3 class="container2__h3">Golazos de la semana</h3>
-				<iframe class="container2__iframe" src="https://www.youtube.com/embed/TGElbi51j3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="container2__div">
-				<h3 class="container2__h3">Mejores Atajadas</h3>
-				<iframe class="container2__iframe" src="https://www.youtube.com/embed/uZHeJQvfG0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="container2__div">
-				<h3 class="container2__h3">Hightlights</h3>
-				<iframe class="container2__iframe" src="https://www.youtube.com/embed/JyhnY2OaUs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="container__mvp">
-				<h3 class="container2__h3">MVP's</h3>
-				<img class="container2__img" src="images/armani.jpeg"  alt="burguerking">
-			</div>
-	</div>
-	<!-- Contenedor horizontal (main) -->
-	<div class="main__end container3">
-		<div class=container3__div>
-				<h2 class="container3__h2">CAMPEONES</h2>
-				<img class="container3__img" src="images/LDF.jpeg" alt="champions">
-		</div>
-		<aside class="container3__aside2 aside2">
-			<img class="aside2__img" src="images/publi13123123.jpg" alt="publicidad">
-		</aside>
-	</div>
-</main>
 
-<footer class="footer">
-	<div class="footer__columna1 columna1">
-		<h3 class="columna1__h3">Sobre Nosotros</h3>
-		<p class="columna1__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis mollitia nemo inventore labore fugiat quaerat quo corporis eligendi vel. Hic magnam at labore officia illum. Dolore eos a ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nam quae odio obcaecati expedita quibusdam fuga aut voluptatibus minima, beatae possimus? In mollitia maxime, illo veniam autem ullam nam suscipit.</p>
-	</div>
-	<div class="footer__columna2 columna2">
-		<div class="columna2__titulo">
-			<h3 class="columna2__h3">SI QUERÉS REGISTRAR TU COMPLEJO</h3>
+
+		<!-- Contenedor principal (izquierda del main) -->
+		<div class="main__container1 container1">
+			<div class="container1__div">
+				<h2 class="container1__h2">Alquilá tu cancha</h2>
+				<p class="container1__p">Lorem ipsum dolor sit, amet conectetur adipisicing elit. Ratione voluptatibus placeat nobis saepe provident, ipsa hic reiciendis. Ullam, magni dolorem aliquid ducimus accusamus totam quidem dicta libero commodi facere porro?</p>
+				<img class="container1__img" src="images/gg.jpg" alt="img-alquilar">
+			</div>
+			<!-- publicidad -->
+			<aside class="container1__aside aside">
+				<img class="aside__img" src="images/publi234324.jpg.webp" alt="publicidad">
+			</aside>
+
+			<div class="container1__div">
+				<h2 class="container1__h2">Registra tu equipo</h2>
+				<p class="container1__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione voluptatibus placeat nobis saepe provident, ipsa hic reiciendis. Ullam, magni dolorem aliquid ducimus accusamus totam quidem dicta libero commodi facere porro?</p>    
+				<img class="container1__img" src="images/torneo.jpg" alt="img-torneo">
+			</div>
 		</div>
-		<div class="footer__contactar">
-			<button class="columna2__button"><a class="columna2__a" href="pages/contacto.html">CONTACTANOS</a></button>
+		<!-- Contenedor principal (derecha del main) -->
+		<div class="main__container2 container2">
+				<div class="container2__div">
+					<h3 class="container2__h3">Golazos de la semana</h3>
+					<iframe class="container2__iframe" src="https://www.youtube.com/embed/TGElbi51j3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="container2__div">
+					<h3 class="container2__h3">Mejores Atajadas</h3>
+					<iframe class="container2__iframe" src="https://www.youtube.com/embed/uZHeJQvfG0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="container2__div">
+					<h3 class="container2__h3">Hightlights</h3>
+					<iframe class="container2__iframe" src="https://www.youtube.com/embed/JyhnY2OaUs0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="container__mvp">
+					<h3 class="container2__h3">MVP's</h3>
+					<img class="container2__img" src="images/armani.jpeg"  alt="burguerking">
+				</div>
 		</div>
-	</div>
-	<div class="footer__columna3 columna3">
-		<!-- redes sociales -->
-		<a class="footer__a2" href="#up"><img src="images/up.png" class="footer__up" alt="up"></a></br>  <!-- subir al inicio -->
-		<img src="images/3721672-instagram_108066.png" class="footer__redes" alt="Insta">
-		<img src="images/Facebook.png" class="footer__redes" alt="Facebook">
-		<img src="images/twitter.png" class="footer__redes" alt="Twitter">
-		<img src="images/YT.png" class="footer__redes" alt="YouTube">
-	 </div>
-</footer>
+		<!-- Contenedor horizontal (main) -->
+		<div class="main__container3 container3">
+			<div class=container3__div>
+					<h2 class="container3__h2">CAMPEONES</h2>
+					<img class="container3__img" src="images/LDF.jpeg" alt="champions">
+			</div>
+			<aside class="container3__aside2 aside2">
+				<img class="aside2__img" src="images/publi13123123.jpg" alt="publicidad">
+			</aside>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__columna1 columna1">
+			<h3 class="columna1__h3">Sobre Nosotros</h3>
+			<p class="columna1__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla perferendis mollitia nemo inventore labore fugiat quaerat quo corporis eligendi vel. Hic magnam at labore officia illum. Dolore eos a ipsum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit nam quae odio obcaecati expedita quibusdam fuga aut voluptatibus minima, beatae possimus? In mollitia maxime, illo veniam autem ullam nam suscipit.</p>
+		</div>
+		<div class="footer__columna2 columna2">
+			<div class="columna2__titulo">
+				<h3 class="columna2__h3">SI QUERÉS REGISTRAR TU COMPLEJO</h3>
+			</div>
+			<div class="footer__contactar">
+				<button class="columna2__button"><a class="columna2__a" href="pages/contacto.html">CONTACTANOS</a></button>
+			</div>
+		</div>
+		<div class="footer__columna3 columna3">
+			<!-- redes sociales -->
+			<a class="footer__a2" href="#up"><img src="images/up.png" class="footer__up" alt="up"></a></br>  <!-- subir al inicio -->
+			<img src="images/3721672-instagram_108066.png" class="footer__redes" alt="Insta">
+			<img src="images/Facebook.png" class="footer__redes" alt="Facebook">
+			<img src="images/twitter.png" class="footer__redes" alt="Twitter">
+			<img src="images/YT.png" class="footer__redes" alt="YouTube">
+		</div>
+	</footer>
 </body>
 </html>
