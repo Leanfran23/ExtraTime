@@ -75,6 +75,11 @@ body {
     padding: 0%;
     flex-direction: row-reverse;
   }
+  body .main__grid {
+    padding: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0%;
+  }
 }
 @media screen and (max-width: 760px) {
   body * {
@@ -113,8 +118,6 @@ body {
     height: 20em;
     font-size: 0.6rem;
     max-width: 100vw;
-    margin-top: -2em;
-    padding: 0%;
   }
   body .columna1__h2 {
     width: 100vw;
@@ -140,10 +143,21 @@ body {
     flex-flow: wrap;
     justify-content: center;
   }
+  body .main__grid {
+    padding: 10%;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0%;
+  }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 480px) {
   body * {
     font-size: 1em;
+  }
+  body .menu__a {
+    font-size: 1rem;
+  }
+  body .menu:hover {
+    padding-top: 5%;
   }
   body .main {
     display: flex;
@@ -160,6 +174,7 @@ body {
   body .footer {
     display: flex;
     flex-direction: column;
+    height: 35em;
   }
   body .footer__redes {
     width: 3.5em;
@@ -190,7 +205,8 @@ body {
   }
   body .columna2 {
     height: 20em;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    line-height: 2rem;
     max-width: 100vw;
     margin-top: 4em;
     padding: 0%;
@@ -199,20 +215,25 @@ body {
   body .columna3 {
     max-width: 100vw;
     height: 5em;
-    display: flex;
     margin-top: 2em;
-    padding: 0%;
+    display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  body .container3 {
+    flex-direction: column;
+  }
+  body .container3__img {
+    padding: 0.5em;
   }
   body .container3__div {
     width: 100%;
     align-items: center;
     justify-content: center;
   }
-  body .grid {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
+  body .main__grid {
+    padding: 10%;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -253,12 +274,15 @@ body {
   -webkit-background-clip: text;
 }
 
+.menu {
+  padding-left: 0;
+}
 .menu__a {
   font-size: 2em;
   color: white;
   display: inline-block;
   height: 100px;
-  padding: 1em;
+  padding: 0.5em;
   transition: 0.9s ease-out;
   padding-top: 0.7em;
 }
@@ -268,6 +292,7 @@ body {
   font-size: 3em;
   border-radius: 40px;
   color: inherit;
+  padding-top: 7%;
 }
 .menu__li {
   display: inline;
@@ -412,13 +437,13 @@ body {
 .container3 {
   grid-column: x0/x2;
   display: flex;
-  flex: inline;
 }
 .container3__h2 {
   width: 100%;
   font-size: 8em;
   height: 1em;
   color: #FFE6A4;
+  background-color: transparent;
 }
 .container3__img {
   overflow: hidden;

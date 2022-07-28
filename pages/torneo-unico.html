@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
           <!-- RESET CSS -->
     <link href="../css/reset.css" rel="stylesheet"> 
+    		<!-- ANIMACIONES -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
 <header class="header">
@@ -25,15 +27,15 @@
         <nav class="menu">
             <ul class="menu__ul" data-animation="bonus">
                 <!-- <li class="menu__li"><a class="menu__a" href="../pages/canchas.html">CANCHAS</a></li> -->
-                <li class="menu__li"><a class="menu__a" href="../pages/partidos.html">PARTIDOS</a></li>
-                <li class="menu__li"><a class="menu__a" href="../pages/galeria.html">GALERIA</a></li>
-                <li class="menu__li"><a class="menu__a" href="../pages/torneos.html">TORNEOS</a></li>
-                <li class="menu__li"><a class="menu__a" href="../pages/contacto.html">CONTACTO</a></li>
+                <li class="menu__li"><a class="menu__a animate__animated animate__zoomInDown" href="../pages/partidos.html">PARTIDOS</a></li>
+                <li class="menu__li"><a class="menu__a animate__animated animate__zoomInDown animate__delay-1s" href="../pages/galeria.html">GALERIA</a></li>
+                <li class="menu__li"><a class="menu__a animate__animated animate__zoomInDown animate__delay-2s" href="../pages/torneos.html">TORNEOS</a></li>
+                <li class="menu__li"><a class="menu__a animate__animated animate__zoomInDown animate__delay-3s" href="../pages/contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
 </header>
 <main class="main__unico">
-    <table class="main__table table">
+    <table class="main__table table animate__animated animate__zoomInDown animate__delay-1s">
         <!-- Tabla de posiciones de un torneo en específico -->
         <tr>
             <th class="table__th team">Equipos</th>
@@ -41,9 +43,9 @@
             <th class="table__th gol">Goles</th>
         </tr>
         <tr>
-            <td class="table__td">Team1</td>
-            <td class="table__td">999</td>
-            <td class="table__td">999</td>
+            <td class="table__td animate__animated animate__slideInLeft animate__delay-3s">Team1</td>
+            <td class="table__td animate__animated animate__slideInLeft animate__delay-3s">999</td>
+            <td class="table__td animate__animated animate__slideInLeft animate__delay-3s">999</td>
         </tr>
         <tr>
             <td class="table__td">Team2</td>
