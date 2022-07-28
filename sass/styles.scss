@@ -6,10 +6,10 @@
     margin: 0%;
     padding: 0%;
     background-color: black;
+     // font-family: 'Oswald', sans-serif;
+    // font-family: 'Red Hat Text', sans-serif;
     // font-family: 'Anek Latin', sans-serif;  //para el container 2 
     font-family: 'League Gothic', sans-serif;
-    // font-family: 'Oswald', sans-serif;
-    // font-family: 'Red Hat Text', sans-serif;
     box-sizing: border-box;
     &:before,
     &::after {
@@ -24,64 +24,135 @@ body {
     grid-template-areas: 'header'
                          'main'
                          'footer';
-    @include mobile(){
-        body{
-            overflow: hidden;
-            justify-content: center;
-            align-items: center;
-        }
-        .header{
-            max-width:100vw;
-            display: flex;
-            flex-direction: column;
-            font-size: .6em;
-        }
-        .footer{
-            display: flex;
-            flex-direction: column;
-            &__redes{
-                width: 3.5em;
-                height: 3.5em;
-            }
-            &__up{
-                width: 3.5em;
-                height: 3.5em;
-            }
-        }
-        .columna1{
-            &__h2{
-                width: 100vw;
-            }
-           
-            height: 20em;
-            font-size: .6rem;
-            max-width: 100vw;
-            margin-top:-2em;
-            padding: 0%;
-        }
-        .columna2{
-            height: 20em;
-            font-size: .6rem;
-            max-width: 100vw;
-            margin-top:4em;
-            padding: 0%;
-            // background-color: blue;
-            text-align: center;
-        }
-        .columna3{
-            max-width: 100vw;
-            height: 5em;
-            // background-color: gray;
-            // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            display: flex;
-            margin-top:2em;
-            padding: 0%;
-            // justify-content:space-around;  
-            flex-direction: row-reverse;
-        }
-
+    @include ipad(){}
+    @include tablet(){}
+    @include mobile(){}
+}
+.header {
+    grid-area: 'header';
+    width: 100%;
+    display: flex;
+    justify-content:space-between;   
+    align-items: center;
+    &__logo {
+        width: 30em;
+        height: 12em;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        width: 10em;
+        height: 10em;
+        margin-right: 0.5em;
+    }
+    &__name{
+        padding-top:.5em ;
+        font-size: 5em;
+        height: 1.3em;
+        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
     }
 }
+.header__name2{
+    padding-top:.09em ;
+    font-size: 5em;
+        height: 1.3em;
+        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+}
+
+.menu {
+    &__a {
+        font-size: 2em;
+        color: white;
+        display: inline-block;
+        height: 100px;
+        padding: 1em;
+        transition: 0.9s ease-out;
+        padding-top: .7em;
+        &:hover{
+            background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
+            transition: 0.5s ease-out;
+            font-size: 3em;
+            border-radius: 40px;
+            color: inherit;
+        }
+    }
+    &__li {
+        display: inline;
+    }
+}
+.main {
+    width: 100%;
+    grid-area: 'main';
+    display: grid;
+    grid-template-columns: [x0] 62vw [x1] 32vw [x2];
+    gap: 4em;
+    // @include mobile (){
+    //     grid-template-columns: [x0]95vw[x1];
+    //     display: block;
+
+    //     .main{
+    //         &__container1{
+    //             max-width:90vw;
+    //         }
+    //         &__container2{
+    //             max-width:90vw;
+    //         }
+    //         &__container3{
+    //             max-width:100vw;
+    //             width: 100vw;
+    //             display: flex;
+    //             flex-direction: column;
+    //             overflow: hidden;
+    //             &__img{
+    //                 width: 90vw;
+    //                 max-width: 90vw;
+    //                 padding: .5em;
+    //             }
+    //         }
+    //     }
+    // }
+
+
+
+    &__container2 {
+        width: 100%;
+        float: right;  
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
+        border-radius: 40px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10em;
+        padding-top: 4em;
+    }
+    //  PAGINA TORNEOS
+    &__torneo{
+        margin-bottom: 2em;
+   }
+    //   PAGINA GALERIA
+   &__galeria{
+    margin-bottom: 2em;
+    //   PAGINA TORNEOP UNICO
+    &__unico {
+        margin-bottom: 2em;
+    }
+     //   PAGINA CONTACTO
+    &__contacto{
+        margin-bottom: 2em;
+    }
+}
+}
+.main__carousel {
+    grid-column: 1 / 3;
+    width: 95vw;
+    margin: 0 auto;
+}
+
 
 .aside {
     width: 70%;
@@ -121,7 +192,6 @@ max-height: 35em;
         display: flex;
         flex-direction: column;
         width: 100%;
-        // height: 50em;
     }
     &__h2 {
         width: 100%;
@@ -132,12 +202,10 @@ max-height: 35em;
     &__img {
         width: 100%;
         height: 100%;
-        // background-color: #E3001B;
     }
     &__p {
         width: 100%;
         font-size: 2em;
-        // background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
         margin: 1.5em;
         font-family: 'Red Hat Text', sans-serif;
@@ -179,7 +247,7 @@ max-height: 35em;
     }
     &__img {
         border-radius: 30px;
-        height: 80%;
+        height: 104%;
     }
 }
 .container3 {
@@ -189,7 +257,6 @@ max-height: 35em;
     &__h2 {
         width: 100%;
         font-size: 8em;
-        padding-top: .4em;
         height: 1em;
         color: #FFE6A4;
     }
@@ -235,78 +302,6 @@ max-height: 35em;
     }
     // FIN PAGINA GALERIA
 }
-.footer {
-    grid-area: 'footer';
-    width: 100vw;
-    display: flex;
-    justify-content:space-between; 
-    background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
-    padding: 3em;
-    margin-top: 2em;
-    &__contactar {
-        border-radius:25px;
-        width: 40%;
-        margin: 0 auto;
-        margin-top: 10%;
-    }
-    &__redes {
-        background: none;
-        width: 5em;
-    }
-    &__up {
-        background-color: none;
-        background: none;
-        width: 7em;
-        margin-left: 35%;
-    }
-    &__a2 {
-        background: none;
-    }
-}
-
-.columna1{
-    background: none;
-    max-width: 20%;
-    &__h3 {
-        font-size: 3em;
-        background: none;
-        color: black;
-    }
-    &__p {
-        font-size: 1.5em;
-        color: rgb(255, 255, 255);
-        background: none;
-        margin-top: 15%;
-    }
-}
-
-.columna2{
-    background: none;
-    &__h3{
-    font-size: 4em;
-    background: none;
-    color: black;
-    }
-    &__titulo{
-        background: none;
-    }
-    &__a {
-        font-size: 3em;
-    }
-    &__button{
-        cursor:pointer;
-        font-size: 1em;
-        margin: 0 auto;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-    }
-}
-.columna3 {
-    max-width: 20%;
-    background: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 
 
@@ -337,131 +332,7 @@ max-height: 35em;
         background-color:rgba(0, 0, 255, 0);
     }
 }
-.header {
-    grid-area: 'header';
-    width: 100%;
-    display: flex;
-    justify-content:space-between;   
-    align-items: center;
-    &__logo {
-        width: 30em;
-        height: 12em;
-        padding: 1em;
-        display: flex;
-        align-items: center;
-    }
-    &__img{
-        width: 10em;
-        height: 10em;
-        margin-right: 0.5em;
-    }
-    &__name{
-        padding-top:.5em ;
-        font-size: 5em;
-        height: 1.3em;
-        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip:text;
-    }
-}
-.header__name2{
-    padding-top:.09em ;
-    font-size: 5em;
-        height: 1.3em;
-        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip:text;
-}
-.main {
-    width: 100%;
-    grid-area: 'main';
-    display: grid;
-    grid-template-columns: [x0] 62vw [x1] 32vw [x2];
-    gap: 4em;
-    @include mobile (){
-        grid-template-columns: [x0]90vw[x1];
-        display: block;
 
-        .main{
-            &__container1{
-                max-width:90vw;
-            }
-            &__container2{
-                max-width:90vw;
-            }
-            &__container3{
-                max-width:100vw;
-                width: 100vw;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                &__img{
-                    width: 90vw;
-                    max-width: 90vw;
-                    padding: .5em;
-                }
-            }
-        }
-    }
-
-
-
-    &__container2 {
-        width: 100%;
-        float: right;  
-        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
-        border-radius: 40px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10em;
-        padding-top: 4em;
-    }
-    //  PAGINA TORNEOS
-    &__torneo{
-        margin-bottom: 2em;
-   }
-    //   PAGINA GALERIA
-   &__galeria{
-    margin-bottom: 2em;
-    //   PAGINA TORNEOP UNICO
-    &__unico {
-        margin-bottom: 2em;
-    }
-     //   PAGINA CONTACTO
-    &__contacto{
-        margin-bottom: 2em;
-    }
-}
-}
-.main__carousel {
-    grid-column: 1 / 3;
-    width: 95vw;
-    margin: 0 auto;
-}
-
-
-.menu {
-    &__a {
-        font-size: 2em;
-        color: #EEEEEE;
-        display: inline-block;
-        height: 100px;
-        padding: 0.3em;
-        transition: 0.9s ease-out;
-        padding-top: .7em;
-        &:hover{
-            background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
-            transition: 0.5s ease-out;
-            font-size: 3em;
-            border-radius: 40px;
-            color: white;
-        }
-    }
-    &__li {
-        display: inline;
-    }
-}
 
 
 //FORMULARIO DE CONTACTO
@@ -472,14 +343,12 @@ max-height: 35em;
         margin-bottom: -15%;
         text-align: center;
         font-size: 5em;
-        // background-color: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
-        // background-color: red;
     }
 
     &__wrapper{
         margin-top: 20em;
         box-shadow: 0 0 20px 0 rgba(128, 24, 240, 0.591);
-        margin: 4em;
+        margin: 4%;
     }
     &__wrapper > *{
         padding: 1em;
@@ -512,6 +381,7 @@ max-height: 35em;
         background-color: none;
         color: white;
         outline: 0;
+        resize: vertical;
     }
     &__button{
         background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
@@ -531,6 +401,8 @@ max-height: 35em;
     }
     &__block{
         grid-column: 1 / 3;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -572,18 +444,29 @@ max-height: 35em;
 
 // PAGINA TORNEO UNICO
 .table {
-    margin-left: 25em;
+    margin: 0 auto;
     text-align: center;
     &__td {
-        color: rgb(255, 255, 255);
-        background-color: gray;
+        color: black;
+        background: linear-gradient(220.55deg, #EAEAEA 0%, #8B8B8B 100%);
+        width: 20vw;
+        height: 3rem;
+        padding-top: 1rem;
     }
     &__th {
-        width: 150px;
-        color: rgb(0, 0, 0);
-        background-color: rgb(219, 229, 72);
-        background-color: #0223fd;
+        font-family: 'Anek Latin', sans-serif;
+        width: 20vw;
+        height: 3rem;
+        padding-top: 1rem;
+        color: white;
+        background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
     }
+}
+.gol{
+    border-radius: 0 25px 0 0;
+}
+.team{
+    border-radius: 25px 0 0 0;
 }
 
 
@@ -639,4 +522,75 @@ max-height: 35em;
 }
 .grid__card--flip:hover .grid__card--inner {
     transform: rotateY(-180deg);
+}
+.footer {
+    grid-area: 'footer';
+    width: 100vw;
+    display: flex;
+    justify-content:space-between; 
+    background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
+    padding: 3em;
+    margin-top: 2em;
+    &__contactar {
+        border-radius:25px;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 10%;
+    }
+    &__redes {
+        background: none;
+        width: 5em;
+    }
+    &__up {
+        background-color: none;
+        background: none;
+        width: 7em;
+        margin-left: 35%;
+    }
+    &__a2 {
+        background: none;
+    }
+}
+.columna1{
+    background: none;
+    max-width: 20%;
+    &__h3 {
+        font-size: 3em;
+        background: none;
+        color: black;
+    }
+    &__p {
+        font-size: 1.5em;
+        color: rgb(255, 255, 255);
+        background: none;
+        margin-top: 15%;
+    }
+}
+
+.columna2{
+    background: none;
+    &__h3{
+    font-size: 4em;
+    background: none;
+    color: black;
+    }
+    &__titulo{
+        background: none;
+    }
+    &__a {
+        font-size: 3em;
+    }
+    &__button{
+        height: 6em;
+        cursor:pointer;
+        font-size: 1em;
+        margin: 0 auto;
+        color: rgb(255, 255, 255);
+    }
+}
+.columna3 {
+    max-width: 20%;
+    background: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
