@@ -5,17 +5,6 @@
 	gap                     : $espacio;
 	@content;
 }
-// @mixin ultrawide(){
-//     @media screen and (min-width:1400px){
-//         body{
-//             max-width: 1400px;
-//         }
-//         .main{
-//             width: 100%;
-//         }
-//         @content;
-//     }
-// }
 
 @mixin ipad(){
 	@media screen and (max-width: 1024px){
