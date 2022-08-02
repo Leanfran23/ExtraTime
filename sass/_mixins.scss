@@ -6,6 +6,8 @@
 	@content;
 }
 
+// MEDIA MIXINS
+
 @mixin ipad(){
 	@media screen and (max-width: 1024px){
 		*{
