@@ -29,6 +29,12 @@ body {
     @include tablet(){}
     @include mobile(){}
 }
+// BOOSTRAP CAMBIA EL RESET POR ELLO TENGO QUE AGRAGAR ESTAS LINEAS
+.body{
+    background-color: black!important;
+}
+// FIN DE FIXED BOOSTRAP
+
 .header {
     grid-area: 'header';
     width: 100%;

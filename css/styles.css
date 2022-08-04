@@ -176,6 +176,10 @@ body {
   }
 }
 
+.body {
+  background-color: black !important;
+}
+
 .header {
   grid-area: "header";
   width: 100%;
