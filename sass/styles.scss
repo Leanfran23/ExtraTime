@@ -34,7 +34,6 @@ body {
     background-color: black!important;
 }
 // FIN DE FIXED BOOSTRAP
-
 .header {
     grid-area: 'header';
     width: 100%;
@@ -77,7 +76,7 @@ body {
     padding-left: 0;
     &__a {
         font-size: 2em;
-        color: white;
+        color: white!important;
         display: inline-block;
         height: 100px;
         padding: .5em;
@@ -119,7 +118,7 @@ body {
    }
     //   PAGINA GALERIA
    &__galeria{
-    margin-bottom: 2em;
+    // margin-bottom: 5em;
     }
     //   PAGINA TORNEOP UNICO
     &__unico {
@@ -446,13 +445,6 @@ max-height: 35em;
         background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
     }
 }
-// .table__gol{
-//     border-radius: 0 25px 0 0;
-// }
-// .table__team{
-//     border-radius: 25px 0 0 0;
-//     background-color: red;
-// }
 
 
 // INICIO GRID de TORNEOS
@@ -581,3 +573,7 @@ max-height: 35em;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+// .white{
+//     color:white!important;
+// }
