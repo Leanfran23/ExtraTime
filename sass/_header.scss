@@ -1,0 +1,63 @@
+
+.header {
+    grid-area: 'header';
+    width: 100%;
+    display: flex;
+    justify-content:space-between;   
+    align-items: center;
+    &__logo {
+        width: 30em;
+        height: 12em;
+        padding: 1em;
+        display: flex;
+        align-items: center;
+    }
+    &__img{
+        width: 10em;
+        height: 10em;
+        margin-right: 0.5em;
+    }
+    &__name{
+        padding-top:.5em ;
+        font-size: 5em;
+        height: 1.3em;
+        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+}
+
+//LO HICE PORQUE BOOSTRAP TIENE PROPIEDADES DE RESET QUE HACEN LIO EN MI PAGINA
+.header__name2{
+    padding-top:.09em ;
+    font-size: 5em;
+        height: 1.3em;
+        background: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+}
+
+
+.menu {
+    padding-left: 0;
+    &__a {
+        font-size: 2em;
+        color: white;
+        display: inline-block;
+        height: 100px;
+        padding: .5em;
+        transition: 0.9s ease-out;
+        padding-top: .7em;
+        &:hover{
+            background-image: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd);
+            transition: 0.5s ease-out;
+            font-size: 3em;
+            border-radius: 40px;
+            color: inherit;
+            padding-top: 7%;
+        }
+    }
+    &__li {
+        display: inline;
+    }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Anek+Latin&family=Kodchasan:wght@200&family=League+Gothic&family=Oswald:wght@200;400&family=Red+Hat+Text:wght@300&display=swap');
+
+// MAPS
+$colores:(
+    colorPrincipal: linear-gradient(to right top, #c800ff, #ab09ff, #8a14ff, #611cfe, #0223fd),
+    colorFondo: black,
+    colorTitulo: white,
+    colorSubtitulo: black,
+    colorCampeones: linear-gradient(220.55deg, #FFE6A4 0%, #AD8211 100%),
+    botonTarjeta: #04C9B7,
+    botonEnviar: linear-gradient(to right top, greenyellow, green)
+);
+
+$fuentes:(
+    fuentePrincipal: 'League Gothic', 
+    fuenteTitulos: 'Red Hat Text',
+    fuenteSubtitulos: 'Anek Latin'
+);
