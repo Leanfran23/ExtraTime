@@ -13,6 +13,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Anek+Latin&family=Kodchasan:wght@200&family=League+Gothic&family=Oswald:wght@200;400&family=Red+Hat+Text:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Anek+Latin&family=Kodchasan:wght@200&family=League+Gothic&family=Oswald:wght@200;400&family=Red+Hat+Text:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Anek+Latin&family=Kodchasan:wght@200&family=League+Gothic&family=Oswald:wght@200;400&family=Red+Hat+Text:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100&family=Anek+Latin&family=Kodchasan:wght@200&family=League+Gothic&family=Oswald:wght@200;400&family=Red+Hat+Text:wght@300&display=swap");
 :root {
   --negro: #393939;
   /* Tipografía */
@@ -202,7 +203,7 @@ body {
     display: flex;
     flex-direction: column;
   }
-  body .footer__redes {
+  body .footer__redes, body .footer__redes1, body .footer__redes2 {
     width: 3.5em;
     height: 3.5em;
   }
@@ -850,7 +851,7 @@ body {
   margin: 0 auto;
   margin-top: 10%;
 }
-.footer__redes {
+.footer__redes, .footer__redes1, .footer__redes2 {
   background: none;
   width: 5em;
 }
@@ -907,6 +908,18 @@ body {
   background: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.footer__redes2 {
+  background-color: #c800ff;
+  padding: 4%;
+  border-radius: 25px;
+}
+
+.footer__redes1 {
+  background-color: #0223fd;
+  padding: 4%;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */

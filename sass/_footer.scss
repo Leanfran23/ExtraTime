@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 
 .footer {
     grid-area: 'footer';
@@ -69,4 +71,18 @@
     background: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.footer__redes2{
+    @extend .footer__redes;
+    background-color: #c800ff;
+    padding: 4%;
+    border-radius: 25px;
+}
+
+.footer__redes1{
+    @extend .footer__redes;
+    background-color: #0223fd;
+    padding: 4%;
+    border-radius: 25px;
 }
