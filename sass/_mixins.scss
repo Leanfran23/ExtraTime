@@ -193,7 +193,12 @@
             padding: 10%;
             grid-template-columns: 1fr;
         }
-
+        span{
+            font-size: 1em;
+        }
+        pre{
+            font-size: 2rem;
+        }
 		@content;
     }
 }

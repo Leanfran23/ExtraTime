@@ -30,7 +30,7 @@ body {
 }
 // BOOSTRAP CAMBIA EL RESET POR ELLO TENGO QUE AGRAGAR ESTAS LINEAS
 .body{
-    background-color: map-get($colores, colorFondo)!important;
+    background-color: map-get($colores, colorFondo)!important; //por el boostrap
 }
 // FIN DE FIXED BOOSTRAP
 
@@ -391,13 +391,6 @@ max-height: 35em;
         background-image: map-get($colores, colorPrincipal);
     }
 }
-// .table__gol{
-//     border-radius: 0 25px 0 0;
-// }
-// .table__team{
-//     border-radius: 25px 0 0 0;
-//     background-color: red;
-// }
 
 
 // INICIO GRID de TORNEOS
@@ -497,4 +490,22 @@ max-height: 35em;
 }
 .lista__a:hover{
     background-color: rgba(255, 0, 0, 0)!important;
+}
+
+
+.footer__error{
+    margin-top: 15em!important;
+}
+.main__error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10em;
+}
+
+span{
+    font-size: 3em;
+}
+pre{
+    font-size: 7rem;
 }

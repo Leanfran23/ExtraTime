@@ -341,6 +341,12 @@ body {
     padding: 10%;
     grid-template-columns: 1fr;
   }
+  body span {
+    font-size: 1em;
+  }
+  body pre {
+    font-size: 2rem;
+  }
 }
 
 .body {
@@ -773,6 +779,25 @@ body {
 
 .lista__a:hover {
   background-color: rgba(255, 0, 0, 0) !important;
+}
+
+.footer__error {
+  margin-top: 15em !important;
+}
+
+.main__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10em;
+}
+
+span {
+  font-size: 3em;
+}
+
+pre {
+  font-size: 7rem;
 }
 
 .header {
